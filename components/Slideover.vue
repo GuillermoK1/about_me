@@ -9,11 +9,11 @@ const links = [{
 }, {
   label: 'Home',
   icon: 'i-heroicons-home',
-  to: '/home',
+  to: '/',
   labelClass: 'text-sky-950 dark:text-sky-200',
   iconClass: 'text-sky-950 dark:text-sky-200' 
 }, {
-  label: 'Projects',
+  label: 'All projects',
   icon: 'i-heroicons-inbox-stack',
   to: '/projects',
   labelClass: 'text-sky-950 dark:text-sky-200',
@@ -31,8 +31,8 @@ const links = [{
   <div>
     <UButton icon="i-heroicons-bars-3" color="gray" @click="isOpen = true" />
 
-    <USlideover v-model="isOpen" :transition="false">
-      <div class="p-4 flex-1">
+    <USlideover v-model="isOpen" :transition="false" class="w-52 " >
+      <div class="p-4 max-w-52">
         <UButton
           color="gray"
           variant="ghost"
@@ -45,6 +45,8 @@ const links = [{
         />
 
         <UVerticalNavigation :links="links" />
+        <p class="p-2">Or choose a project...</p>
+        <SelectMenu />
       </div>
     </USlideover>
   </div>
