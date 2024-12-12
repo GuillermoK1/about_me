@@ -1,22 +1,28 @@
 <script setup lang="ts">
 import { useBreakpoint } from '~/composables/useBreakpoint';
 
-const { currentBreakpoint, isAbove } = useBreakpoint();
+const { is } = useBreakpoint();
 </script>
 
 <template>
-  <section class="mt-4 h-fit flex place-content-between bg-sky-300 dark:bg-sky-900">
-    <h1 class="p-4">
+  <section class="p-4 flex justify-between w-fit" >
+    <div v-if="is('xs')">
+      <UAvatar
+      src="assets/profile_picture.jpg"
+      alt="profile picture"
+      size="xl"
+      />
+      <Slideover/>
+    </div>
+    <VerticalNavigation v-else />
+    <div class="m-4 grid grid-rows-2">   
+      <h1 class="m-2 p-2 max-h-3 inline">
         About Guillermo Kababbe Development Services
-    </h1>
-    <HorizontalNavigation v-if="isAbove('md')" class="p-4" />
-    <div v-else class="p-4">
-      <Slideover class="flex justify-end"/>
-      <div>
-      <p class="p-2">Or choose a project...</p>
-      <SelectMenu />
+      </h1>
+      <div class="m-2 p-2 flex justify-center">
+        <p>My proyects list</p>
+        <SelectMenu />
       </div>
     </div>
-    
   </section>
 </template>

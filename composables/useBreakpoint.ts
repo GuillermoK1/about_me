@@ -35,7 +35,11 @@ export function useBreakpoint(breakpoints = { sm: 640, md: 768, lg: 1024, xl: 12
   const isAbove = (size: string) => {
     const sizes = Object.keys(breakpoints).concat(['xl']);
     return sizes.indexOf(currentBreakpoint.value) >= sizes.indexOf(size);
+  };  
+  const isUnder = (size: string) => {
+    const sizes = Object.keys(breakpoints).concat(['xl']);
+    return sizes.indexOf(currentBreakpoint.value) <= sizes.indexOf(size);
   };
 
-  return { currentBreakpoint, is, isAbove };
+  return { currentBreakpoint, is, isAbove, isUnder };
 }

@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const links = [{
   avatar: {
-    src: '',
+    src: 'assets/profile_picture.jpg',
     alt: 'GK',
-    size: 'md'
+    size: 'xl'
   }
 }, {
   label: 'Home',
@@ -27,10 +27,5 @@ const links = [{
 </script>
 
 <template>
-  <UHorizontalNavigation :links="links" class="border-b border-gray-200 dark:border-gray-800"
-  />
-  <div class="p-2">
-  <p class="p-2">Or choose a project...</p>
-  <SelectMenu />
-  </div>
+    <UVerticalNavigation :links="links" />
 </template>
