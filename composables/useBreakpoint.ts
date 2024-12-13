@@ -1,6 +1,6 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 
-export function useBreakpoint(breakpoints = { sm: 640, md: 768, lg: 1024, xl: 1280 }) {
+export function useBreakpoint(breakpoints = { xs:360, sm: 640, md: 768, lg: 1024, xl: 1280 }) {
   const currentBreakpoint = ref('');
 
   // Función para obtener el breakpoint actual
@@ -8,6 +8,7 @@ export function useBreakpoint(breakpoints = { sm: 640, md: 768, lg: 1024, xl: 12
     if (typeof window === 'undefined') return 'xs'; // Por defecto para SSR
     const width = window.innerWidth;
 
+    if (width < breakpoints.xs) return '2xs';
     if (width < breakpoints.sm) return 'xs';
     if (width < breakpoints.md) return 'sm';
     if (width < breakpoints.lg) return 'md';

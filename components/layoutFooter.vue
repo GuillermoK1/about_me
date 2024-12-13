@@ -15,7 +15,8 @@ const links = [{
 </script>
 
 <template>
-  <UVerticalNavigation
+  <section>
+    <UVerticalNavigation
     :links="links"
     class="w-full"
     :ui="{
@@ -23,5 +24,5 @@ const links = [{
     }"
   >
   </UVerticalNavigation>
+  </section>
 </template>
-

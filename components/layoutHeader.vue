@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { useBreakpoint } from '~/composables/useBreakpoint';
 
-const { is } = useBreakpoint();
+const { is, isAbove } = useBreakpoint();
 </script>
 
 <template>
   <section class="p-4 flex justify-between w-fit" >
-    <div v-if="is('xs')">
+    <div v-if="is('2xs')">
       <UAvatar
       src="assets/profile_picture.jpg"
       alt="profile picture"
@@ -15,11 +15,11 @@ const { is } = useBreakpoint();
       <Slideover/>
     </div>
     <VerticalNavigation v-else />
-    <div class="m-4 grid grid-rows-2">   
-      <h1 class="m-2 p-2 max-h-3 inline">
+    <div class="m-4 grid grid-rows-2 xs:grid-rows-1">   
+      <h1 class="m-2 xs:-m-3 p-2 xs:p-0 max-h-6 inline">
         About Guillermo Kababbe Development Services
       </h1>
-      <div class="m-2 p-2 flex justify-center">
+      <div v-if="isAbove('sm')" class="m-2 p-2 flex justify-center">
         <p>My proyects list</p>
         <SelectMenu />
       </div>
