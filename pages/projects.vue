@@ -4,8 +4,8 @@ import { ref, onMounted } from 'vue'
 const items = [ // Imágenes servidas localmente en la carpeta ~public.
   { src: 'assets/plasma/circulo.jpg', link: '/plasma' },
   { src: 'assets/Python/readme_capture.png', link: '/python' },
-  { src: 'https://picsum.photos/1920/1080?random=3', link: '/page3' },
-  { src: 'https://picsum.photos/1920/1080?random=4', link: '/page4' },
+  { src: 'assets/themes/capture_color_pallets_tailwind.png', link: '/themes' },
+  { src: 'assets/capture-new-project.png', link: '/new' },
 
 ]
 
@@ -20,22 +20,22 @@ onMounted(() => {
     }
 
     carouselRef.value.next()
-  }, 3000)
+  }, 5000)
 })
 </script>
 
 <template>
-  <UCarousel
-    ref="carouselRef"
-    v-slot="{ item }"
-    :items="items"
-    :ui="{ item: 'basis-full' }"
-    class="rounded-lg overflow-hidden h-fit"
-    indicators
-    arrows
-  >
-    <a :href="item.link">
-      <img :src="item.src" class="w-full" draggable="false" alt="Oops! Failed to load image...">
-    </a>
-  </UCarousel>
+    <UCarousel
+      ref="carouselRef"
+      v-slot="{ item }"
+      :items="items"
+      :ui="{ item: 'basis-full' }"
+      class="rounded-lg overflow-hidden h-fit flex"
+      indicators
+      arrows
+    >
+      <a :href="item.link">
+        <img :src="item.src" class="w-full grow" draggable="false" alt="Oops! Failed to load image...">
+      </a>
+    </UCarousel>
 </template>

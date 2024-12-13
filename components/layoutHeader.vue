@@ -15,13 +15,13 @@ const { is, isAbove } = useBreakpoint();
       <Slideover/>
     </div>
     <VerticalNavigation v-else />
-    <div class="m-4 grid grid-rows-2 xs:grid-rows-1">   
+    <div class="m-4 grid grid-cols-2 xs:grid-rows-1">   
       <h1 class="m-2 xs:-m-3 p-2 xs:p-0 max-h-6 inline">
         About Guillermo Kababbe Development Services
       </h1>
-      <div v-if="isAbove('sm')" class="m-2 p-2 flex justify-center">
-        <p>My proyects list</p>
-        <SelectMenu />
+      <div v-if="isAbove('md')" class="m-2 p-2 flex justify-center">
+        <p>Some of my projects: </p>
+        <SlideProjectList />
       </div>
     </div>
   </section>

@@ -1,16 +1,17 @@
 <script setup lang="ts">
 const links = [{
-  label: 'github',
+  label: 'Check my github repositories.',
   icon: 'i-heroicons-folder-20-solid',
   badge: 'GuillermoK1',
+  to: 'https://github.com/GuillermoK1'
 }, {
-  label: 'license',
+  label: 'No license for this site.',
   icon: 'i-heroicons-document-solid',
-  badge: 'License',
+  badge: 'Made with heart',
 }, {
-  label: 'contact',
+  label: 'Contact',
   icon: 'i-heroicons-document-solid',
-  badge: 'Contact',
+  badge: 'guillermojkr@gmail.com'
 }]
 </script>
 
@@ -18,7 +19,7 @@ const links = [{
   <section>
     <UVerticalNavigation
     :links="links"
-    class="w-full"
+    class="w-4/5"
     :ui="{
       label: 'text-gray-900 dark:text-white'
     }"
