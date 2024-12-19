@@ -34,8 +34,12 @@ onMounted(() => {
       indicators
       arrows
     >
-      <a :href="item.link">
-        <img :src="item.src" class="w-full grow" draggable="false" alt="Oops! Failed to load image...">
+      <a class="w-full h-full flex items-center justify-center" :href="item.link">
+        <img
+          :src="item.src"
+          class="w-full h-full object-cover"
+          draggable="false"
+          alt="Oops! Failed to load image...">
       </a>
     </UCarousel>
 </template>

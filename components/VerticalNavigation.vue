@@ -23,6 +23,13 @@ const links = [{
   to: '/themes',
   labelClass: 'text-sky-950 dark:text-sky-200',
   iconClass: 'text-sky-950 dark:text-sky-200' 
+},
+{
+  label: 'CV',
+  icon: 'i-heroicons-clipboard-document-list',
+  to: '/cv',
+  labelClass: 'text-sky-950 dark:text-sky-200',
+  iconClass: 'text-sky-950 dark:text-sky-200' 
 }]
 </script>
 
