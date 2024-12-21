@@ -15,9 +15,9 @@ const selected = ref(false)
         <p v-else><strong>English</strong> / Español</p>
     </div>
     <div v-if="selected">
-        <iframe src="/assets/CVs/CV ATS_es.pdf" width="100%" class="h-[50vh] rounded-lg"></iframe>
+        <iframe src="/public/CV_es.pdf" width="100%" class="h-[50vh] rounded-lg"></iframe>
     </div>
     <div v-else>
-        <iframe src="/assets/CVs/CV ATS_en.pdf" width="100%" class="h-[50vh] rounded-lg"></iframe>
+        <iframe src="/public/CV_en.pdf" width="100%" class="h-[50vh] rounded-lg"></iframe>
     </div>
 </template>

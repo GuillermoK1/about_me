@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   modules: ["@nuxt/ui"],
   compatibilityDate: "2024-11-30",
   nitro: {
-    preset: "cloudflare-pages"
+    preset: "cloudflare-pages",
+    serveStatic: true
   }
 })
