@@ -10,7 +10,7 @@ useSeoMeta({
   ogTitle: 'About Guillermo Kabbabe',
   description: 'About page, powered by NuxtUI and Tailwind.css.',
   ogDescription: 'About page, powered by NuxtUI and Tailwind.css.',
-  ogImage: '/faviconNuxt.ico',
+  ogImage: '/assets/profile_picture.jpg',
   ogType: 'website',
   ogUrl: 'https://aboutme-ahl.pages.dev'
 })
