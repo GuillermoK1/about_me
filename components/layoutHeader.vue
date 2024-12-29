@@ -8,7 +8,7 @@ const { is, isAbove } = useBreakpoint();
   <section class="p-4 flex justify-between w-fit" >
     <div v-if="is('2xs')">
       <UAvatar
-      src="assets/profile_picture.jpg"
+      src="/profile_picture.jpg"
       alt="profile picture"
       size="xl"
       />
