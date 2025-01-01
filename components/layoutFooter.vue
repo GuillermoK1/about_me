@@ -2,16 +2,13 @@
 const links = [{
   label: 'Check my github repositories.',
   icon: 'i-heroicons-folder-20-solid',
-  badge: 'GuillermoK1',
   to: 'https://github.com/GuillermoK1'
 }, {
-  label: 'No license for this site.',
+  label: 'MIT License',
   icon: 'i-heroicons-document-solid',
-  badge: 'Made with heart',
 }, {
   label: 'Contact',
-  icon: 'i-heroicons-document-solid',
-  badge: 'guillermojkr@gmail.com'
+  icon: 'i-heroicons-envelope-solid',
 }]
 </script>
 
