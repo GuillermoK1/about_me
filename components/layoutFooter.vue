@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const links = [{
-  label: 'Check my github repositories.',
+  label: 'My github repositories.',
   icon: 'i-heroicons-folder-20-solid',
   to: 'https://github.com/GuillermoK1'
 }, {

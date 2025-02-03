@@ -1,6 +1,6 @@
 <template>
     <h1 class="p-4">
-        Un script en Python para procesar una base de datos.
+        A Python project that porcesses data from a CSV file and generates a new CSV file with the processed data.
     </h1>
     <h2 class="p-4">
         <a class="text-sky-500" href="https://github.com/GuillermoK1/Matthias"> Ver repositorio en GitHub.</a>
