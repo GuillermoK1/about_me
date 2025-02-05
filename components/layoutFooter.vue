@@ -3,12 +3,15 @@ const links = [{
   label: 'My github repositories.',
   icon: 'i-heroicons-folder-20-solid',
   to: 'https://github.com/GuillermoK1'
-}, {
-  label: 'MIT License',
-  icon: 'i-heroicons-document-solid',
-}, {
-  label: 'Contact',
+},
+{
+  label: 'info@gkdevservices.com',
   icon: 'i-heroicons-envelope-solid',
+},
+{
+  label: 'LinkedIn profile',
+  icon: 'i-heroicons-linkedin-solid',
+  to: 'https://www.linkedin.com/in/gkdevservices/'
 }]
 </script>
 
