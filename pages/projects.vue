@@ -4,7 +4,7 @@ import { ref, onMounted } from 'vue'
 const items = [ // Imágenes servidas localmente en la carpeta ~public.
   { src: 'assets/plasma/circulo.jpg', link: '/plasma' },
   { src: 'assets/Python/readme_capture.png', link: '/python' },
-  { src: 'assets/themes/themes_capture.jpg', link: '/themes' },
+  { src: 'assets/themes/themes_capture.png', link: '/themes' },
   { src: 'assets/capture-new-project.png', link: '/new' },
 
 ]

@@ -1,29 +1,19 @@
-<script setup lang="ts">
-const links = [{
-  label: 'My github repositories.',
-  icon: 'i-heroicons-folder-20-solid',
-  to: 'https://github.com/GuillermoK1'
-},
-{
-  label: 'info@gkdevservices.com',
-  icon: 'i-heroicons-envelope-solid',
-},
-{
-  label: 'LinkedIn profile',
-  icon: 'i-heroicons-linkedin-solid',
-  to: 'https://www.linkedin.com/in/gkdevservices/'
-}]
-</script>
-
 <template>
-  <section>
-    <UVerticalNavigation
-    :links="links"
-    class="w-4/5"
-    :ui="{
-      label: 'text-gray-900 dark:text-white'
-    }"
-  >
-  </UVerticalNavigation>
+  <section class="flex justify-evenly p-4">
+    <div>
+      <a href="https://github.com/GuillermoK1">
+        <img src="/public/github-mark-white.png" alt="GitHub logo" class="w-8 h-8 m-2"/>
+      </a>
+    </div>
+    <div>
+      <a href="https://www.linkedin.com/in/gkdevservices/">
+        <img src="/public/LI-Logo.png" alt="LinkedIn logo" class="w-22 h-8 m-2"/>
+      </a>
+    </div>
+    <div>
+      <a href="mailto:info@gkdevservices.com">
+        <img src="/public/gmail-nuevo.png" alt="gmail-nuevo Logo de Icon8.com" class="w-8 h-8 m-2"/>
+      </a>
+    </div>
   </section>
 </template>
