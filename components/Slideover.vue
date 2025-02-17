@@ -5,7 +5,7 @@ const isOpen = ref(false)
 <template>
   <div>
     <UButton icon="i-heroicons-bars-3" color="gray" @click="isOpen = true" />
-    <USlideover v-model="isOpen" :transition="false" class="w-52 " >
+    <USlideover v-model="isOpen" :transition="true" class="w-52 " >
       <div class="p-4 max-w-52">
         <UButton
           color="gray"
@@ -17,7 +17,6 @@ const isOpen = ref(false)
           padded
           @click="isOpen = false"
         />
-        <VerticalNavigation/>
       </div>
     </USlideover>
   </div>

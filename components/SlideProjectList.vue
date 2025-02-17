@@ -5,8 +5,8 @@ const isOpen = ref(false)
 <template>
   <div>
     <UButton icon="i-heroicons-book-open" color="gray" @click="isOpen = true" />
-    <USlideover v-model="isOpen" side="right" class="w-52" >
-      <div class="p-4 max-w-52">
+    <USlideover v-model="isOpen" side="right" class="w-auto" >
+      <div class="p-4 w-auto">
         <UButton
           color="gray"
           variant="ghost"
@@ -17,7 +17,7 @@ const isOpen = ref(false)
           padded
           @click="isOpen = false"
         />
-        <ProjectList/>
+        <Tech-stack/>
       </div>
     </USlideover>
   </div>

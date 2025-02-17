@@ -1,5 +1,5 @@
 <template>
     <section>
-        <NuxtPage class="max-h-[65vh]" />
+        <NuxtPage class="h-auto" />
     </section>
 </template>
