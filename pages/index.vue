@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div class="relative w-full h-full overflow-hidden">
         <video 
             autoplay 
@@ -16,4 +16,16 @@
             </h1>
         </div>
     </div>
+</template> -->
+<template>
+    <UContainer>
+        <blockquote class="flex flex-col items-center p-4 my-8">
+            <p class="font-serif font-extrabold text-2xl md:text-3xl text-gray-800 text-center max-w-3xl leading-relaxed mb-4">
+                "Every great developer you know got there by solving problems they were unqualified to solve until they actually did it."
+            </p>
+            <footer class="text-gray-800 font-medium">
+                — Patrick McKenzie (@patio11)
+            </footer>
+        </blockquote>
+    </UContainer>
 </template>
