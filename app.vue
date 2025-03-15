@@ -51,7 +51,7 @@ const toggleColorMode = () => {
         Tailwind.css
     </div>
     <div class="mx-4 flex">
-      <h1 class="p-2 flex no-wrap rounded bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 via-blue-500 to-gray-500 font-bold">GKDevServices.com</h1>
+      <h1 class="p-2 font-bold text-2xl flex no-wrap bg-gradient-to-r from-gray-400 via-emerald-500 to-gray-400 bg-clip-text text-transparent hover:from-emerald-500 hover:via-gray-500 hover:to-emerald-500 transition-all duration-300">GKDevServices.com</h1>
       <ClientOnly>
         <UButton
         class="mx-2 w-10 h-10 ml-8"

@@ -38,7 +38,9 @@ const familiarTech = [
   'Matplotlib',
   'Javascript',
   'Vue',
-  'Google C. P.'
+  'Google C. P.',
+  'Wordpress',
+  'Shopify'
 ]
 
 const currentStack = [

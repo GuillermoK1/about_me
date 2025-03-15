@@ -1,28 +1,23 @@
-<script setup lang="ts">
-import { useBreakpoint } from '~/composables/useBreakpoint';
-
-const { is, isAbove } = useBreakpoint();
-</script>
-
 <template>
-  <section class="p-4 flex justify-between w-fit" >
-    <div v-if="is('2xs')">
-      <UAvatar
-      src="/assets/profile_picture.jpg"
-      alt="profile picture"
-      size="xl"
-      />
-      <Slideover/>
+  <section class="p-4 grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" >
+    <div>
+      <VerticalNavigation />
     </div>
-    <VerticalNavigation v-else />
-    <div class="m-4 grid grid-cols-1 md:grid-rows-2">   
-      <h1 class="min-w-30 inline m-2 p-2 xl:text-2xl sm:text-md xs:text-xs font-bold bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent hover:from-teal-600 hover:to-purple-600 transition-all duration-300">
-        Guillermo Kabbabe Development Services
+    <div>
+      <h1 class="min-w-30 inline m-2 p-2 xl:text-2xl sm:text-md xs:text-xs font-bold">
+        Services offered
       </h1>
-      <div v-if="isAbove('md')" class="m-2 p-2 gap-2 flex justify-center">
-        <p>Technologies: </p>
-        <SlideProjectList />
-      </div>
+      <p>· Full Stack Development from scratch</p>
+      <p>· e-commerce maintanence</p>
+      <p>· Web Design</p>
+      <p>· SEO</p>
+      <p>· Web Accessibility</p>
+      <p>· Web Security</p>
+      <p>· Web Hosting</p>
+      <p>· Web App</p>
     </div>
+    <div class="grid justify-end">
+      <SlideProjectList />
+    </div>   
   </section>
 </template>
