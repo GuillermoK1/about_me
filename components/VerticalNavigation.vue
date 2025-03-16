@@ -30,6 +30,12 @@ const links = [{
   to: '/cv',
   labelClass: 'text-sky-950 dark:text-sky-200',
   iconClass: 'text-sky-950 dark:text-sky-200' 
+}, {
+  label: 'Testimonials',
+  icon: 'i-heroicons-chat-bubble-left-right',
+  to: '/testimonial',
+  labelClass: 'text-sky-950 dark:text-sky-200',
+  iconClass: 'text-sky-950 dark:text-sky-200' 
 }]
 </script>
 
