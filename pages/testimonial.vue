@@ -13,8 +13,8 @@
 
 <script setup lang="ts">
 const testimonials = [
-  { id: 1, text: 'I love your products!', author: 'apricitestudios.com' },
-  { id: 2, text: 'I love your products!', author: 'flashdata slu' },
-  { id: 3, text: 'I love your products!', author: 'Lauri Saar' },
+  { id: 1, text: 'Coming soon...', author: 'apricitestudios.com' },
+  { id: 2, text: 'Coming soon...', author: 'flashdata slu' },
+  { id: 3, text: 'Coming soon...', author: 'Lauri Saar' },
 ]
 </script>

@@ -25,7 +25,7 @@ const items: ProjectItem[] = [
     tech: ['Python', 'Pandas', 'NumPy']
   },
   {
-    src: 'assets/themes/themes_capture.png',
+    src: 'assets/themes/capture.png',
     link: '/themes',
     title: 'Theme Builder',
     description: 'Custom theming system for web applications',
